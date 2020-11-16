@@ -13,15 +13,19 @@ e mostre sua categoria, de acordo com a idade:
 – Acima de 25 anos: MASTER'''
 
 
-idade = int(input('Digite a sua idade: '))
-
+nome = str(input('Informe sua nome: '))
+anoNascimento = int(input('Informe sua data de nascimento: '))
+ano = 2020
+idade = ano - anoNascimento
+print('{}, você nasceu em {}, portanto sua idade é de {} anos.'.format(nome,anoNascimento,idade))
 if idade <= 9:
-    print('MIRIM {}'.format(idade))
-elif idade > 9 and idade <= 14:
-    print('INFANTIL {}'.format(idade))
-elif idade > 14 and idade <= 19:
-    print('JÚNIOR {}'.format(idade))
+    print('Sua categoria é MIRIM.')
+elif idade > 9 and idade <=14:
+    print('Sua categoria é INFANTIL.')
+elif idade >14 and idade <= 19:
+    print('Sua caterogia é JÚNIOR.')
 elif idade > 19 and idade <= 25:
-    print('SÊNIOR {}'.format(idade))
+    print('Sua caterogia é SÊNIOR.')
 elif idade > 25:
-    print('MASTER {}'.format(idade))
+    print('Sua caterogia é MASTER.')
+
