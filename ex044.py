@@ -27,4 +27,4 @@ if(pagamento == 3):
     print('Valor com preço normal. R$:{:.2f}'.format(valor))
 if(pagamento == 4):
     c = valor + (valor * 20 / 100)
-    print('Valor com 20% de juros R$:{:.2f}'.format(c))
+    print('Valor com 20% de juros R$:{:.2f  }'.format(c))
